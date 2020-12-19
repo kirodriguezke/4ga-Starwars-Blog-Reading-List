@@ -1,1 +1,44 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.navbar-brand {
+    background-color: black;
+}
+
+.navbar-brand img {
+    width: 150px;
+    
+}
+
+#button-info {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+}
+
+#card-more {
+    max-width: 540px;
+}
+
+.scroll-horizontal {
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+	overflow-x: auto;
+	white-space: nowrap;
+    margin: 25px 0;
+}
+
+.divider-pink {
+    margin: 15px 0px;
+    background-color: #EF3C5D;
+    height: 2px;
+    width: auto;
+}
+
+.pink-text {
+    color: #EF3C5D;
+}
+

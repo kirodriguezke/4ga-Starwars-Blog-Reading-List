@@ -9,11 +9,9 @@ import injectContext from "./store"
 
 import Footer from "./components/footer.js"
 import Navbar from "./components/navbar.js"
-
 import Home from "./pages/home.js"
-import About from "./pages/about.js"
-import Contact from "./pages/contact.js"
-import User from "./pages/user.js"
+import People from "./pages/people.js"
+import Planets from "./pages/planets.js"
 
 export default injectContext(function(props) {
     return (
@@ -26,21 +24,17 @@ export default injectContext(function(props) {
                         <Home />
                     </Route>
 
-                    <Route path="/about">
-                        <About />
+                    <Route path="/people/:index">
+                        <People />
                     </Route>
 
-                    <Route path="/contact">
-                        <Contact />
-                    </Route>
-
-                    <Route path="/users/:id">
-                        <User />
+                    <Route path="/planets/:index">
+                        <Planets />
                     </Route>
                 </Switch>
             </div>
 
-            <Footer />
+            
         </Router>
     )
 })
